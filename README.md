@@ -11,7 +11,7 @@ C++ STL algorithm for pattern matching across a variety of container types, such
 
 How to use-
 
-1.Include the pattern_match.h header in your C++ code.
+1.Include the "pattern_match.h" header in your C++ code.
 
 2.Define your custom comparison lambda function to determine pattern matching logic.
 
