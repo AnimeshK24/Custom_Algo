@@ -2,7 +2,8 @@
 
  Swap two elements in a container by their indices.
  
- To use this just add the "swap_element" file in you project and include the "swap_element.h" in the file you want to use this Swap Algorithms
+ To use this just add the "swap_element.h" file in you project and include the "swap_element.h" in the file you want to use this Swap Function.
+ You can swap any two element in any container of same data type.
  
 -----------------------------------------------------------------------------------------------------------------------------------------------
 # std::custom_pattern_match-
