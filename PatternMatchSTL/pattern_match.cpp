@@ -22,14 +22,21 @@ int main()
 
     // This lambda compares a range starting from 'itr' with a specified pattern.
    // Returns true if the pattern is found in the range, and false otherwise.
-    auto compare = [](auto itr, auto patternBegin, auto patternEnd)
+ auto customPatternMatch = [](auto itr, auto patternBegin, auto patternEnd)
+    {
+        for (auto it = itr; it != patternEnd; ++it)
+        {
+            if (*it <= 3)
             {
-                return std::equal(patternBegin, patternEnd, itr);
-            };
+                return false; // If any element is less than or equal to 3, the pattern doesn't match.
+            }
+        }
+        return true; // All elements in the pattern are greater than 3.
+    };
 
     if (std::custom_pattern_match(
             pattern,
-            compare,
+            customPatternMatch,
             vector1, vector2, vector3, vector4))
     {
         std::cout << "Pattern found in the vector." << std::endl;
